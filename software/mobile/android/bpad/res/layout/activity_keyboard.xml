@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/binary_view"
+        android:inputType="none"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="8"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/binary_text" />
+    
+    <EditText
+        android:id="@+id/ascii_view"
+        android:inputType="none"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="12"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/ascii_text" />
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center_vertical"
+		android:orientation="horizontal">
+		
+        <Button
+	        android:id="@+id/key_shift"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_shift" 
+	        android:layout_weight="1"/>
+        
+        <Button
+	        android:id="@+id/key_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_1" 
+	        android:layout_weight="1"/>
+		
+    </LinearLayout>
+
+</LinearLayout>
